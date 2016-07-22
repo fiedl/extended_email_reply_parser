@@ -1,6 +1,6 @@
 # ExtendedEmailReplyParser
 
-[![Build Status](https://travis-ci.org/fiedl/extended_email_reply_parser.svg?branch=master)](https://travis-ci.org/fiedl/extended_email_reply_parser) [![Code Climate](https://codeclimate.com/github/fiedl/extended_email_reply_parser/badges/gpa.svg)](https://codeclimate.com/github/fiedl/extended_email_reply_parser) [![Test Coverage](https://codeclimate.com/github/fiedl/extended_email_reply_parser/badges/coverage.svg)](https://codeclimate.com/github/fiedl/extended_email_reply_parser/coverage) [![Gem Version](https://badge.fury.io/rb/extended_email_reply_parser.svg)](https://badge.fury.io/rb/extended_email_reply_parser)
+[![Join the chat at https://gitter.im/fiedl/extended_email_reply_parser](https://badges.gitter.im/fiedl/extended_email_reply_parser.svg)](https://gitter.im/fiedl/extended_email_reply_parser?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.org/fiedl/extended_email_reply_parser.svg?branch=master)](https://travis-ci.org/fiedl/extended_email_reply_parser) [![Code Climate](https://codeclimate.com/github/fiedl/extended_email_reply_parser/badges/gpa.svg)](https://codeclimate.com/github/fiedl/extended_email_reply_parser) [![Test Coverage](https://codeclimate.com/github/fiedl/extended_email_reply_parser/badges/coverage.svg)](https://codeclimate.com/github/fiedl/extended_email_reply_parser/coverage) [![Gem Version](https://badge.fury.io/rb/extended_email_reply_parser.svg)](https://badge.fury.io/rb/extended_email_reply_parser)
 
 When implementing a "reply or comment by email" feature, it's neccessary to filter out signatures and the previous conversation. One needs to extract just the relevant parts for the conversation or comment section of the application. This is what this [ruby](https://www.ruby-lang.org) gem helps to do.
 
@@ -79,7 +79,6 @@ EmailParsers::ShoutParser.parse \
   ExtendedEmailReplyParser::Parsers::Github.parse \
   message
 ```
-
 
 
 ## Installation
