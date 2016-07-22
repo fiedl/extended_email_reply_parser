@@ -25,7 +25,6 @@ message.parse  # => parsed text as String
 For example, for a incoming `Mail::Message`, `message`:
 
 ```ruby
-@comment.author = User.where(email: message.from.first)
 @comment.text = ExtendedEmailReplyParser.parse message
 @comment.save!
 ```
