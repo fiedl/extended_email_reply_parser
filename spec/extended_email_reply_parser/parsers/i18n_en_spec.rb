@@ -10,9 +10,15 @@ describe ExtendedEmailReplyParser::Parsers::I18nEn do
 
       it { is_expected.to be_kind_of String }
 
-      it { is_expected.to include "der Vorschlag von Thomas scheint mir am sinnvollsten sein." }
-      it { is_expected.not_to include "From: F, Thomas" }
-      it { is_expected.not_to include "Dear all," }
+      it 'includes the relevant new reply text' do
+        expect(subject).to include "der Vorschlag von Thomas scheint mir am sinnvollsten sein."
+      end
+      it 'does not include the previous conversation, lead by "From: Sent: To:"' do
+        expect(subject).not_to include "Dear all,"
+      end
+      it 'does not include the header of the previous conversation' do
+        expect(subject).not_to include "From: F, Thomas"
+      end
     end
 
   end
