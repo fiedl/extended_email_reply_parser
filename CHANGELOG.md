@@ -6,6 +6,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## master (unreleased)
 ### Security
 ### Added
+### Deprecated
+### Removed
+### Fixed
+
+## ExtendedEmailReplyParser 0.2.0 (2016-07-22)
+### Added
 - `Parsers::Base#hide_everything_after(expressions)` is useful when email clients do not quote the previous conversation. This parser method hides everything lead by a series of expressions, e.g. `hide_everything_after %w(From: Sent: To:)`.
 - `Parsers::Base#except_in_visible_block_quotes`. Within this block, `hide_everything_after` is not applied. This is useful when a quote is already marked as to be shown.
 - German parser `Parsers::I18nDe`, which removes previous conversation by searching for the phrases "Gesendet: Von: An:" and "Am ... schrieb ...:".
@@ -25,10 +31,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
         > Cheers
 - English parser `Parsers::I18nEn`, which removes previous conversation by searching for the phrases "From: Sent: To".
-
-### Deprecated
-### Removed
-### Fixed
 
 ## ExtendedEmailReplyParser 0.1.0 (2016-07-22)
 ### Added
