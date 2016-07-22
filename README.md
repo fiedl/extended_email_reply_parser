@@ -1,6 +1,9 @@
 # ExtendedEmailReplyParser
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/extended_email_reply_parser`. To experiment with that code, run `bin/console` for an interactive prompt.
+[![Build Status](https://travis-ci.org/fiedl/extended_email_reply_parser.svg?branch=master)](https://travis-ci.org/fiedl/extended_email_reply_parser)
+
+## Usage
+
 
 TODO: Delete this and the text above, and describe your gem
 
@@ -9,20 +12,17 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
+# Gemfile
 gem 'extended_email_reply_parser'
 ```
 
 And then execute:
 
-    $ bundle
+    ➜ bundle
 
 Or install it yourself as:
 
-    $ gem install extended_email_reply_parser
-
-## Usage
-
-TODO: Write usage instructions here
+    ➜ gem install extended_email_reply_parser
 
 ## Development
 
@@ -32,10 +32,10 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/extended_email_reply_parser.
+Bug reports and pull requests are welcome on GitHub at https://github.com/fiedl/extended_email_reply_parser.
 
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+The gem is available as open source under the terms of the [MIT License](MIT-LICENSE).
 
