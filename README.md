@@ -25,6 +25,7 @@ message.parse  # => parsed text as String
 For example, for a incoming `Mail::Message`, `message`:
 
 ```ruby
+@comment.author = User.where(email: message.from.first).first
 @comment.text = ExtendedEmailReplyParser.parse message
 @comment.save!
 ```
@@ -42,6 +43,23 @@ There's also a convenience method to extract the body text from an email file:
 ```ruby
 ExtendedEmailReplyParser.read "/path/to/email.eml"  # => Mail::Message
 ExtendedEmailReplyParser.read("/path/to/email.eml").extract_text  # => String
+```
+
+### Writing a parser
+
+The parsing system allows you to add your own parser to the parsing chain. Just define a class inheriting from `ExtendedEmailReplyParser::Parsers::Base` and implement a `parse` method. The text before parsing is accessed via `text`.
+
+```ruby
+# app/models/email_parsers/my_parser.rb
+class EmailParsers::ShoutParser < ExtendedEmailReplyParser::Parsers::Base
+
+  # This parser SHOUTS THE WHOLE EMAIL.
+  # The text before parsing is accessed by `text`.
+  #
+  def parse
+    text.upcase
+  end
+end
 ```
 
 ## Installation
