@@ -12,6 +12,11 @@ module ExtendedEmailReplyParser
       return text
     end
 
+    def except_in_visible_block_quotes(&block)
+      @email.except_in_visible_block_quotes(&block)
+      return @email.visible_text
+    end
+
 
     def hide_everything_after(expressions)
       @email.hide_everything_after(expressions)

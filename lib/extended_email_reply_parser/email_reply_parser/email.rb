@@ -20,12 +20,22 @@ class EmailReplyParser
           hidden_fragment.content = rest.join("\n")
 
           hidden_fragment.quoted = true
+          if @except_in_visible_block_quotes
+            hidden_fragment.hidden = true unless fragment.quoted? and not fragment.hidden?
+          else
             hidden_fragment.hidden = true
+          end
 
           [first_fragment, hidden_fragment]
         end
       end.flatten - [nil]
       @fragments = @fragments.select { |fragment| fragment.to_s && fragment.to_s != "" }
+    end
+
+    def except_in_visible_block_quotes
+      @except_in_visible_block_quotes = true
+      yield
+      @except_in_visible_block_quotes = false
     end
   end
 end
