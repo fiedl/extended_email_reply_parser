@@ -1,5 +1,7 @@
 # ExtendedEmailReplyParser
 
+[![Join the chat at https://gitter.im/fiedl/extended_email_reply_parser](https://badges.gitter.im/fiedl/extended_email_reply_parser.svg)](https://gitter.im/fiedl/extended_email_reply_parser?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/extended_email_reply_parser`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem
