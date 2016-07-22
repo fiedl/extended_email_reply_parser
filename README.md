@@ -104,6 +104,108 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
+### Helper methods for writing parsers
+
+To accomplish the most common parsing operations, there are a couple of helper methods.
+
+This, for example, is the [English parser](lib/extended_email_reply_parser/parsers/i18n_en.rb).
+
+```ruby
+module ExtendedEmailReplyParser
+  class Parsers::I18nEn < Parsers::Base
+
+    def parse
+      except_in_visible_block_quotes do
+        hide_everything_after ["From: ", "Sent: ", "To: "]
+      end
+    end
+
+  end
+end
+```
+
+#### `add_quote_header_regex`
+
+The [github parser](https://github.com/github/email_reply_parser) needs to know how to identify the header line of quotes, for example "On Tue, 2011-03-01 at 18:02 +0530, Abhishek Kona wrote":
+
+    Hi,
+
+    On Tue, 2011-03-01 at 18:02 +0530, Abhishek Kona wrote:
+    > Hi folks
+    >
+    > What is the best way to clear a Riak bucket of all key, values after
+    > running a test?
+    > I am currently using the Java HTTP API.
+
+    You can list the keys for the bucket and call delete for each. Or if you
+    put the keys (and kept track of them in your test) you can delete them
+    one at a time (without incurring the cost of calling list first.)
+
+By default, it uses the regex `/^On .* wrote:$/` for that. To make it recognize other header lines, specify their patterns using `add_quote_header_regex`.
+
+Since this is needed by the github parser, i.e. possibly before the `parse` method of your custom parser is run, make sure to add the quote header regex in the class head:
+
+```ruby
+module ExtendedEmailReplyParser
+  class Parsers::I18nDe < Parsers::Base
+    add_quote_header_regex '^Am .* schrieb.*$'
+    # ...
+  end
+end
+```
+
+#### `hide_everything_after`
+
+Some email clients do not quote the previous conversation.
+
+    Hi Chris,
+    this is great, thanks!
+    Cheers, John
+
+
+    From: Chris <chris@example.com>
+    Sent: Saturday, July 09, 2016 3:27 PM
+    To: John <john@example.com>
+    Subject: The solution!
+
+    Hi John,
+    I've just found a solution to our big problem!
+    ...
+
+To remove the previous conversation, tell the parser expressions to identify where start of the previous conversation:
+
+```ruby
+module ExtendedEmailReplyParser
+  class Parsers::I18nEn < Parsers::Base
+    def parse
+      except_in_visible_block_quotes do
+        hide_everything_after ["From: ", "Sent: ", "To: "]
+      end
+      # ...
+    end
+  end
+end
+```
+
+(The parser will combine the expressions to a regex: `/(#{expressions.join(".*?")}.*?\n)/m`, for example: `/(From: .*?Sent: .*?To: .*?\n)/m`.)
+
+To avoid cutting off the email within a visible quote, wrap the `hide_everything_after` within a `except_in_visible_block_quotes` block as shown above.
+
+    Hi Chris,
+
+    > From: Chris <chris@example.com>
+    > Sent: Saturday, July 09, 2016 3:27 PM
+    > To: John <john@example.com>
+    > Subject: The solution!
+    >
+    > Hi John,
+    > I've just found a solution to our big problem!
+
+    this is great, thanks!
+    Cheers, John
+
+If not wrapped in `except_in_visible_block_quotes`, the parsed email would just be "Hi Chris,", because everything after "From: Sent: To:" would be cut off.
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/fiedl/extended_email_reply_parser.
