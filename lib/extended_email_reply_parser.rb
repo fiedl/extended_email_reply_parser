@@ -1,5 +1,6 @@
 require 'mail'
 require 'charlock_holmes'
+require 'email_reply_parser'
 require 'active_support'
 require 'active_support/core_ext/object/blank'
 require 'extended_email_reply_parser/mail/message'

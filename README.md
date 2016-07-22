@@ -4,6 +4,8 @@
 
 When implementing a "reply or comment by email" feature, it's neccessary to filter out signatures and the previous conversation. One needs to extract just the relevant parts for the conversation or comment section of the application. This is what this [ruby](https://www.ruby-lang.org) gem helps to do.
 
+This gem is an extended version of [github's `email_reply_parser`](https://github.com/github/email_reply_parser). It wraps the original email_reply_parser and allows to build extensions such as support for i18n and detecting previous conversation that is not properly marked as quotation by the sender's mail client.
+
 ## Usage
 
 ### Parsing incoming emails
@@ -61,6 +63,24 @@ class EmailParsers::ShoutParser < ExtendedEmailReplyParser::Parsers::Base
   end
 end
 ```
+
+### Selecting parsers to use
+
+By default, all parsers that inherit from `ExtendedEmailReplyParser::Parsers::Base` are used. One simply has to call:
+
+```ruby
+ExtendedEmailReplyParser.parse message
+```
+
+In order to select specific parsers, just chain them yourself:
+
+```ruby
+EmailParsers::ShoutParser.parse \
+  ExtendedEmailReplyParser::Parsers::Github.parse \
+  message
+```
+
+
 
 ## Installation
 

@@ -28,6 +28,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency 'pry'
 
+  spec.add_dependency 'email_reply_parser', '~> 0.5.9'
   spec.add_dependency 'mail'
   spec.add_dependency 'charlock_holmes'
   spec.add_dependency 'activesupport'
