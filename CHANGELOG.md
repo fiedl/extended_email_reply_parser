@@ -10,6 +10,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Removed
 ### Fixed
 
+
+## ExtendedEmailReplyParser 0.3.0 (2016-07-22)
+### Added
+- `ExtendedEmailReplyParser#extract_text(message)` as alternative to `message.extract_text` in order to indicate where the method comes from. When using `message.extract_text` one is lead to look for the definition in `Mail::Message` directly.
+
 ## ExtendedEmailReplyParser 0.2.0 (2016-07-22)
 ### Added
 - `Parsers::Base#hide_everything_after(expressions)` is useful when email clients do not quote the previous conversation. This parser method hides everything lead by a series of expressions, e.g. `hide_everything_after %w(From: Sent: To:)`.
