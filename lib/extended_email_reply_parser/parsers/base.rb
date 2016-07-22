@@ -18,6 +18,10 @@ module ExtendedEmailReplyParser
       return @email.visible_text
     end
 
+    def remove_empty_lines_between_block_quote_lines
+      @email.remove_empty_lines_between_block_quote_lines
+      return @email.visible_text
+    end
 
     def hide_everything_after(expressions)
       @email.hide_everything_after(expressions)

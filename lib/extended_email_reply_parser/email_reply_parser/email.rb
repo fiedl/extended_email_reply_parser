@@ -5,6 +5,15 @@ class EmailReplyParser
       split_fragments_at split_regex
     end
 
+    def remove_empty_lines_between_block_quote_lines
+      @fragments = @fragments.collect do |fragment|
+        if fragment.quoted?
+          fragment.content = fragment.content.gsub /\n *?\n>/m, "\n>"
+        end
+        fragment
+      end
+    end
+
     def split_fragments_at(regex)
       @fragments = @fragments.collect do |fragment|
         if fragment.to_s

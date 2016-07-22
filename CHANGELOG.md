@@ -10,6 +10,20 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - `Parsers::Base#except_in_visible_block_quotes`. Within this block, `hide_everything_after` is not applied. This is useful when a quote is already marked as to be shown.
 - German parser `Parsers::I18nDe`, which identifies quotes by the phrases "Gesendet: Von: An:" and "Am ... schrieb ...:".
 - Support for i18n-ed header lines. The github parser only knows "On ... wrote". Since this is needed when the github parser runs, specify additional regexes in the class header of the parsers using `add_quote_header_regex`, for example: `add_quote_header_regex '^Am .* schrieb.*$'`.
+- The German parser adds the regex for quote headers like "Am ... schrieb ...:".
+- Remove empty lines between quote lines:
+
+        > Hi,
+        > how are you doing?
+        > Cheers
+
+  rather than
+
+        > Hi,
+
+        > how are you doing?
+
+        > Cheers
 
 ### Deprecated
 ### Removed
