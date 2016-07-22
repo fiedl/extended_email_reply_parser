@@ -18,7 +18,7 @@ module Mail
     end
 
     def extract_text
-      (self.text_part || (self if self.content_type.include?('text/plain'))).body_in_utf8
+      (self.text_part || (self if self.content_type.include?('text/plain'))).try(:body_in_utf8)
     end
 
     def parse

@@ -9,7 +9,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Deprecated
 ### Removed
 ### Fixed
-
+- Fixing issue "undefined `body_in_utf8` for `nil`".
 
 ## ExtendedEmailReplyParser 0.3.0 (2016-07-22)
 ### Added
