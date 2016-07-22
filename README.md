@@ -97,6 +97,13 @@ Add this line to your application's Gemfile:
 gem 'extended_email_reply_parser'
 ```
 
+Or, for the edge version:
+
+```ruby
+# Gemfile
+gem 'extended_email_reply_parser', github: 'fiedl/extended_email_reply_parser'
+```
+
 And then execute:
 
     ➜ bundle
