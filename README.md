@@ -4,8 +4,11 @@
 
 ## Usage
 
+There's a convenience method to read in an email file and return a [Mail::Message](https://github.com/mikel/mail/blob/master/lib/mail/message.rb) object.
 
-TODO: Delete this and the text above, and describe your gem
+```ruby
+ExtendedEmailReplyParser.read "/path/to/email.eml"  # => Mail::Message
+```
 
 ## Installation
 
