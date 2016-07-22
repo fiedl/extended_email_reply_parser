@@ -36,6 +36,12 @@ describe Mail::Message do
     end
   end
 
+  describe "#parse" do
+    let(:message) { Mail.read('spec/email_fixtures/email_multipart.eml') }
+    subject { message.parse }
+    it { is_expected.to be_kind_of String }
+  end
+
   describe "#from#first" do
     let(:message) { Mail.read('spec/email_fixtures/email_text.eml') }
     subject { message.from.first }
