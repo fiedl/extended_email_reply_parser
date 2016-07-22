@@ -8,6 +8,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - `Parsers::Base#hide_everything_after(expressions)` is useful when email clients do not quote the previous conversation. This parser method hides everything lead by a series of expressions, e.g. `hide_everything_after %w(From: Sent: To:)`.
 - `Parsers::Base#except_in_visible_block_quotes`. Within this block, `hide_everything_after` is not applied. This is useful when a quote is already marked as to be shown.
+- German parser `Parsers::I18nDe`, which identifies quotes by the phrases "Gesendet: Von: An:" and "Am ... schrieb ...:".
 
 ### Deprecated
 ### Removed
