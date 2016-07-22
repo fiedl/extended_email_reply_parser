@@ -29,4 +29,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'pry'
 
   spec.add_dependency 'mail'
+  spec.add_dependency 'charlock_holmes'
+  spec.add_dependency 'activesupport'
 end

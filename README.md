@@ -4,10 +4,11 @@
 
 ## Usage
 
-There's a convenience method to read in an email file and return a [Mail::Message](https://github.com/mikel/mail/blob/master/lib/mail/message.rb) object.
+There's a method to read in an email file and return a [Mail::Message](https://github.com/mikel/mail/blob/master/lib/mail/message.rb) object, which is extended by this gem to conveniently return the text body as utf-8.
 
 ```ruby
 ExtendedEmailReplyParser.read "/path/to/email.eml"  # => Mail::Message
+ExtendedEmailReplyParser.read("/path/to/email.eml").extract_text  # => String
 ```
 
 ## Installation

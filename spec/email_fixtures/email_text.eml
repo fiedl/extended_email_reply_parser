@@ -1,0 +1,20 @@
+DomainKey-Status: no signature
+Return-Path: <S@example.com>
+X-Spam-Checker-Version: SpamAssassin 3.4.0 (2014-02-07) on
+X-Spam-Level:
+X-Spam-Status: No, score=-2.9 required=7.0 tests=ALL_TRUSTED,BAYES_00
+	autolearn=ham autolearn_force=no version=3.4.0
+X-Original-To: S@example.com
+Delivered-To: S@example.com
+Received: from [1.2.3.4] (p5B0FEC87.dip0.t-ipconnect.de [1.2.3.4])
+From: S F <S@example.com>
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Subject: Test
+Message-Id: <D97B5F39-B5F4-4358-85E7-29C42F04EF6A@example.com>
+Date: Fri, 22 Jul 2016 13:15:34 +0200
+To: S F <S@example.com>
+Mime-Version: 1.0 (Mac OS X Mail 9.3 \(3124\))
+X-Mailer: Apple Mail (2.3124)
+
+This is a text test, bro!

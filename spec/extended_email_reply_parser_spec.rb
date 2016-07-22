@@ -6,8 +6,9 @@ describe ExtendedEmailReplyParser do
   end
 
   describe "#read" do
-    subject { ExtendedEmailReplyParser.read('spec/email_fixtures/email_de_1.txt') }
+    subject { ExtendedEmailReplyParser.read('spec/email_fixtures/email_multipart.eml') }
 
     it { is_expected.to be_kind_of Mail::Message }
+    it { is_expected.to respond_to :extract_text }
   end
 end

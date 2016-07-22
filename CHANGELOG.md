@@ -6,7 +6,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## master (unreleased)
 ### Security
 ### Added
-- Convenience method `ExtendedEmailReplyParser.read "/path/to/email.eml"  # => Mail::Message`
+- `ExtendedEmailReplyParser.read "/path/to/email.eml"` returns the corresponding `Mail::Message` object.
+- `ExtendedEmailReplyParser.read("/path/to/email.eml").extract_text` returns the email body text in utf-8. See also: http://stackoverflow.com/a/15818886/2066546
 
 ### Deprecated
 ### Removed
