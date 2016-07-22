@@ -1,5 +1,6 @@
 module ExtendedEmailReplyParser
   class Parsers::Base
+    @@quote_header_regexes ||= []
 
     attr_accessor :text
 
@@ -21,6 +22,17 @@ module ExtendedEmailReplyParser
     def hide_everything_after(expressions)
       @email.hide_everything_after(expressions)
       return @email.visible_text
+    end
+
+    # "On ... wrote:" (English)
+    # "Am ... schrieb ...:" (German)
+    # ...
+    #
+    def self.quote_header_regexes
+      @@quote_header_regexes
+    end
+    def self.add_quote_header_regex(regex_string)
+      @@quote_header_regexes << regex_string
     end
 
     def self.subclasses

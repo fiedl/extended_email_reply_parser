@@ -1,5 +1,6 @@
 module ExtendedEmailReplyParser
   class Parsers::I18nDe < Parsers::Base
+    add_quote_header_regex '^Am .* schrieb.*$'
 
     def parse
       except_in_visible_block_quotes do

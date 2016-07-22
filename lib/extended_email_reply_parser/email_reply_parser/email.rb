@@ -37,5 +37,23 @@ class EmailReplyParser
       yield
       @except_in_visible_block_quotes = false
     end
+
+    private
+
+    # Detects if a given line is a header above a quoted area.  It is only
+    # checked for lines preceding quoted regions.
+    #
+    # line - A String line of text from the email.
+    #
+    # Returns true if the line is a valid header, or false.
+    #
+    # This method overrides the original in order to include the different
+    # regex defined in the different ExtendedEmailReplyParser::Parsers.
+    #
+    def quote_header?(line)
+      regex = ExtendedEmailReplyParser::Parsers::Base.quote_header_regexes.join("|")
+      line.reverse =~ /#{regex}/
+    end
+
   end
 end

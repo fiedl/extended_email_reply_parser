@@ -9,6 +9,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - `Parsers::Base#hide_everything_after(expressions)` is useful when email clients do not quote the previous conversation. This parser method hides everything lead by a series of expressions, e.g. `hide_everything_after %w(From: Sent: To:)`.
 - `Parsers::Base#except_in_visible_block_quotes`. Within this block, `hide_everything_after` is not applied. This is useful when a quote is already marked as to be shown.
 - German parser `Parsers::I18nDe`, which identifies quotes by the phrases "Gesendet: Von: An:" and "Am ... schrieb ...:".
+- Support for i18n-ed header lines. The github parser only knows "On ... wrote". Since this is needed when the github parser runs, specify additional regexes in the class header of the parsers using `add_quote_header_regex`, for example: `add_quote_header_regex '^Am .* schrieb.*$'`.
 
 ### Deprecated
 ### Removed
