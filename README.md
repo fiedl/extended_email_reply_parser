@@ -2,9 +2,43 @@
 
 [![Build Status](https://travis-ci.org/fiedl/extended_email_reply_parser.svg?branch=master)](https://travis-ci.org/fiedl/extended_email_reply_parser)
 
+When implementing a "reply or comment by email" feature, it's neccessary to filter out signatures and the previous conversation. One needs to extract just the relevant parts for the conversation or comment section of the application. This is what this [ruby](https://www.ruby-lang.org) gem helps to do.
+
 ## Usage
 
-There's a method to read in an email file and return a [Mail::Message](https://github.com/mikel/mail/blob/master/lib/mail/message.rb) object, which is extended by this gem to conveniently return the text body as utf-8.
+### Parsing incoming emails
+
+To extract the relevant text of an email reply, call `ExtendedEmailReplyParser.parse`, which accepts either a path to the email file, or a `Mail::Message` object, or the email body text itself, and returns the parsed, i.e. relevant text, which can be used as comment in the application
+
+```ruby
+ExtendedEmailReplyParser.parse "/path/to/email.eml"
+ExtendedEmailReplyParser.parse message
+ExtendedEmailReplyParser.parse body_text             # => parsed text as String
+```
+
+Or, if you prefer to call `#parse` on the `Mail::Message`:
+
+```ruby
+message.parse  # => parsed text as String
+```
+
+For example, for a incoming `Mail::Message`, `message`:
+
+```ruby
+@comment.author = User.where(email: message.from.first)
+@comment.text = ExtendedEmailReplyParser.parse message
+@comment.save!
+```
+
+### Extracting the body text
+
+This gem extends [Mail::Message](https://github.com/mikel/mail/blob/master/lib/mail/message.rb) to  conveniently extract the text body as utf-8.
+
+```ruby
+message.extract_text
+```
+
+There's also a convenience method to extract the body text from an email file:
 
 ```ruby
 ExtendedEmailReplyParser.read "/path/to/email.eml"  # => Mail::Message

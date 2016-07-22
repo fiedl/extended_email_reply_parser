@@ -34,6 +34,16 @@ describe Mail::Message do
         expect(subject).not_to include "From: S F <S@example.com>"
       end
     end
+  end
 
+  describe "#from#first" do
+    let(:message) { Mail.read('spec/email_fixtures/email_text.eml') }
+    subject { message.from.first }
+    it 'returns the email address' do
+      expect(subject).to eq 'S@example.com'
+    end
+    it 'does not include the name' do
+      expect(subject).not_to include "S F"
+    end
   end
 end
