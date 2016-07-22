@@ -1,6 +1,6 @@
 # ExtendedEmailReplyParser
 
-[![Build Status](https://travis-ci.org/fiedl/extended_email_reply_parser.svg?branch=master)](https://travis-ci.org/fiedl/extended_email_reply_parser) [![Code Climate](https://codeclimate.com/github/fiedl/extended_email_reply_parser/badges/gpa.svg)](https://codeclimate.com/github/fiedl/extended_email_reply_parser)
+[![Build Status](https://travis-ci.org/fiedl/extended_email_reply_parser.svg?branch=master)](https://travis-ci.org/fiedl/extended_email_reply_parser) [![Code Climate](https://codeclimate.com/github/fiedl/extended_email_reply_parser/badges/gpa.svg)](https://codeclimate.com/github/fiedl/extended_email_reply_parser) [![Test Coverage](https://codeclimate.com/github/fiedl/extended_email_reply_parser/badges/coverage.svg)](https://codeclimate.com/github/fiedl/extended_email_reply_parser/coverage)
 
 When implementing a "reply or comment by email" feature, it's neccessary to filter out signatures and the previous conversation. One needs to extract just the relevant parts for the conversation or comment section of the application. This is what this [ruby](https://www.ruby-lang.org) gem helps to do.
 
