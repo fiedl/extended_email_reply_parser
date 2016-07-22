@@ -3,7 +3,11 @@ require 'charlock_holmes'
 require 'email_reply_parser'
 require 'active_support'
 require 'active_support/core_ext/object/blank'
+
 require 'extended_email_reply_parser/mail/message'
+require 'extended_email_reply_parser/email_reply_parser/email'
+require 'extended_email_reply_parser/email_reply_parser/fragment'
+
 require 'extended_email_reply_parser/parsers'
 require 'extended_email_reply_parser/parsers/base'
 Dir.glob(File.dirname(File.absolute_path(__FILE__)) + "/extended_email_reply_parser/parsers/*") { |file| require file }
