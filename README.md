@@ -43,8 +43,8 @@ message.extract_text
 Or, to see where this comes from:
 
 ```ruby
-ExtendedEmailREplyParser.extract_text message
-ExtendedEmailREplyParser.extract_text '/path/to/email.eml'
+ExtendedEmailReplyParser.extract_text message
+ExtendedEmailReplyParser.extract_text '/path/to/email.eml'
 ```
 
 Or, in two separate steps:
