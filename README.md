@@ -40,10 +40,17 @@ This gem extends [Mail::Message](https://github.com/mikel/mail/blob/master/lib/m
 message.extract_text
 ```
 
-There's also a convenience method to extract the body text from an email file:
+Or, to see where this comes from:
 
 ```ruby
-ExtendedEmailReplyParser.read "/path/to/email.eml"  # => Mail::Message
+ExtendedEmailREplyParser.extract_text message
+ExtendedEmailREplyParser.extract_text '/path/to/email.eml'
+```
+
+Or, in two separate steps:
+
+```ruby
+ExtendedEmailReplyParser.read("/path/to/email.eml")  # => Mail::Message
 ExtendedEmailReplyParser.read("/path/to/email.eml").extract_text  # => String
 ```
 
