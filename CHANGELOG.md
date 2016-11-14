@@ -6,11 +6,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## master (unreleased)
 ### Security
 ### Added
-- `Mail::Message#extract_html` extracts the html part as a counterpart for `Mail::Message#extract_text`. This is useful when an email has no text part.
-- `Parsers::HtmlMails#parse` removes quotes indicated by `<div name="quote"></div>`.
 ### Deprecated
 ### Removed
 ### Fixed
+
+## ExtendedEmailReplyParser 0.4.0 (2016-11-14)
+### Added
+- `Mail::Message#extract_html` extracts the html part as a counterpart for `Mail::Message#extract_text`. This is useful when an email has no text part.
+- `Parsers::HtmlMails#parse` removes quotes indicated by `<div name="quote"></div>`.
 
 ## ExtendedEmailReplyParser 0.3.1 (2016-07-26)
 ### Fixed
