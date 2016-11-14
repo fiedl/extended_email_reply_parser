@@ -81,7 +81,7 @@ module ExtendedEmailReplyParser
   end
 
   def self.parse_message(message)
-    self.parse_text message.extract_text
+    self.parse_text(message.extract_text || message.extract_html_body_content)
   end
 
   def self.parse_text(text)

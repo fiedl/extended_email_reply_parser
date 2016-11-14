@@ -21,6 +21,15 @@ module Mail
       (self.text_part || (self if self.content_type.include?('text/plain'))).try(:body_in_utf8)
     end
 
+    def extract_html
+      (self.html_part || (self if self.content_type.include?('text/html'))).try(:body_in_utf8)
+    end
+
+    def extract_html_body_content
+      # http://stackoverflow.com/a/356376/2066546
+      extract_html.match(/(.*<\s*body[^>]*>)(.*)(<\s*\/\s*body\s*\>.+)/m)[2] || extract_html
+    end
+
     def parse
       ExtendedEmailReplyParser.parse self
     end
