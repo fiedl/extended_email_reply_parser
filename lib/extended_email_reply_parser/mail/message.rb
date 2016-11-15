@@ -25,6 +25,10 @@ module Mail
       (self.html_part || (self if self.content_type.include?('text/html'))).try(:body_in_utf8)
     end
 
+    def extract_text_or_html
+      extract_text || extract_html_body_content
+    end
+
     def extract_html_body_content
       # http://stackoverflow.com/a/356376/2066546
       extract_html.match(/(.*<\s*body[^>]*>)(.*)(<\s*\/\s*body\s*\>.+)/m)[2] || extract_html

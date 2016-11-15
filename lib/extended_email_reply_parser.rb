@@ -58,6 +58,25 @@ module ExtendedEmailReplyParser
     end
   end
 
+  # Extract the body text from the given Mail::Message.
+  # If there is no text part, extract the content of the body tag
+  # of the html part.
+  #
+  #     ExtendedEmailReplyParser.extract_text_or_html message
+  #     ExtendedEmailReplyParser.extract_text_or_html '/path/to/email.eml'
+  #
+  # This is the same as:
+  #
+  #     message.extract_text_or_html
+  #
+  def self.extract_text_or_html(message_or_path)
+    if message_or_path.kind_of? Mail::Message
+      message_or_path.extract_text_or_html
+    elsif message_or_path.kind_of? String and File.file? message_or_path
+      Mail.read(message_or_path).extract_text_or_html
+    end
+  end
+
   # This parses the given object, i.e. removes quoted replies etc.
   #
   # Examples:
@@ -81,7 +100,7 @@ module ExtendedEmailReplyParser
   end
 
   def self.parse_message(message)
-    self.parse_text(message.extract_text || message.extract_html_body_content)
+    self.parse_text(message.extract_text_or_html)
   end
 
   def self.parse_text(text)

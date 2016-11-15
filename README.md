@@ -54,6 +54,15 @@ ExtendedEmailReplyParser.read("/path/to/email.eml")  # => Mail::Message
 ExtendedEmailReplyParser.read("/path/to/email.eml").extract_text  # => String
 ```
 
+**Optional: How to handle html-only emails**: There are emails that do not have a text part but only an html part. For those emails, `ExtendedEmailReplyParser.parse` uses the html part. But, to give you more control over how to handle those situations, `ExtendedEmailReplyParser.extract_text` returns `nil` for those emails. If you want your text extraction to fall back to the html part if the text part is missing, use this:
+
+```ruby
+ExtendedEmailReplyParser.extract_text_or_html message
+ExtendedEmailReplyParser.extract_text_or_html '/path/to/email.eml'
+```
+
+The `Mail::Message` object it self is extended to support `message.extract_text`, `message.extract_html_body_content` as well as `message.extract_text_or_html`.
+
 ### Writing a parser
 
 The parsing system allows you to add your own parser to the parsing chain. Just define a class inheriting from `ExtendedEmailReplyParser::Parsers::Base` and implement a `parse` method. The text before parsing is accessed via `text`.
