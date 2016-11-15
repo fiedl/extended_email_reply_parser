@@ -6,11 +6,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## master (unreleased)
 ### Security
 ### Added
-- Adding `ExtendedEmailReplyParser.extract_text_or_html` which falls back to the html part if the text part is missing.
-- `ExtendedEmailReplyParser.parse` uses `extract_text_or_html`. This is good, because html-only mails do not just return `nil`. But, be aware that `ExtendedEmailReplyParser.parse` may include html tags this way. If this causes you troble, use `ExtendedEmailReplyParser.parse(ExtendedEmailReplyParser.extract_text(message_or_path))` instead, which only uses the text part. We might correct the behavior in the future in order to strip the html tags during the parsing.
 ### Deprecated
 ### Removed
 ### Fixed
+
+## ExtendedEmailReplyParser 0.5.0 (2016-11-15)
+### Added
+- Adding `ExtendedEmailReplyParser.extract_text_or_html` which falls back to the html part if the text part is missing.
+- `ExtendedEmailReplyParser.parse` uses `extract_text_or_html`. This is good, because html-only mails do not just return `nil`. But, be aware that `ExtendedEmailReplyParser.parse` may include html tags this way. If this causes you troble, use `ExtendedEmailReplyParser.parse(ExtendedEmailReplyParser.extract_text(message_or_path))` instead, which only uses the text part. We might correct the behavior in the future in order to strip the html tags during the parsing.
 
 ## ExtendedEmailReplyParser 0.4.0 (2016-11-14)
 ### Added
