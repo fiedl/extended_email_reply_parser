@@ -39,6 +39,44 @@ describe ExtendedEmailReplyParser::Parsers::I18nDe do
       end
     end
 
+    describe "emails with 'Von, An, Gesendet, Betreff', but without quote symbols '>'" do
+      before { @text = @message = Mail::Message.new(load_email('email_de_8')) }
+
+      it 'includes the relevant new reply text' do
+        expect(subject).to include "Guten Abend"
+        expect(subject).to include "Mein Profil, exampleitischer Lebenslauf"
+        expect(subject).to include "Viele Grüße"
+      end
+      it 'does not include the previous conversation' do
+        expect(subject).not_to include "Von:"
+        expect(subject).not_to include "Betreff: Antwort: Meine Aktivitätszahlen stimmen nicht."
+        expect(subject).not_to include "die verdrehten Aktivitätszahlen könnten eine Nachwehe unserer Wartungsarbeiten"
+      end
+      it 'does not include the header of the previous conversation' do
+        expect(subject).not_to include "support@example.org"
+        expect(subject).not_to include "Antwort: Meine Aktivitätszahlen stimmen nicht."
+      end
+    end
+
+    describe "emails with 'Gesendet, Vonn, An, Betreff', but without quote symbols '>'" do
+      before { @text = @message = Mail::Message.new(load_email('email_de_9')) }
+
+      it 'includes the relevant new reply text' do
+        expect(subject).to include "Lieber ConPhil F"
+        expect(subject).to include "vielen Dank f&uuml;r die R&uuml;ckmeldung"
+        expect(subject).to include "Viele Gr&uuml;&szlig;e"
+      end
+      it 'does not include the previous conversation' do
+        expect(subject).not_to include "Gesendet:"
+        expect(subject).not_to include "Antwort: ich kann leider keine neue Ausgabe des Schoppenstechers"
+        expect(subject).not_to include "Philister Back ist jetzt für zwei Wochen"
+      end
+      it 'does not include the header of the previous conversation' do
+        expect(subject).not_to include "support@example.org"
+        expect(subject).not_to include "Antwort: ich kann leider keine neue Ausgabe des Schoppenstechers"
+      end
+    end
+
     describe "emails with signature separated by _____________________________" do
       before { @text = load_email 'email_de_3' }
 

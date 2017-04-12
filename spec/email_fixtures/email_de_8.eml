@@ -1,0 +1,452 @@
+Return-Path: <support@example.org>
+Received: from mout.example.com (mout.example.com [1.2.3.4]) by example.org (Postfix) with ESMTP id 397887E1C for <support@example.org>; Tue, 11 Apr 2017 19:17:37 +0200
+Received: from [1.2.3.4] ([1.2.3.4]) by mx.example.com (mxeue011 [1.2.3.4]) with ESMTPS (Nemesis) id 1MqrPF-1cKIwD48B7-00nHx0 for <support@example.org>; Tue, 11 Apr 2017 19:17:37 +0200
+Received: from nm12-vm2.bullet.mail.ir2.yahoo.com ([1.2.3.4]) by mx.example.com (mxeue011 [1.2.3.4]) with ESMTPS (Nemesis) id 1MtOvu-1c4dNm44SM-00uAGn for <support@example.org>; Tue, 11 Apr 2017 19:17:36 +0200
+Received: from [1.2.3.4] by nm12.bullet.mail.ir2.yahoo.com with NNFMP; Tue, 11 Apr 2017 17:17:36 +0000
+Received: from [1.2.3.4] by tm10.bullet.mail.ir2.yahoo.com with NNFMP; Tue, 11 Apr 2017 17:17:36 +0000
+Received: from [1.2.3.4] by omp1012.mail.ir2.yahoo.com with NNFMP; Tue, 11 Apr 2017 17:17:36 +0000
+Received: from jws700061.mail.ir2.yahoo.com by
+ sendmailws167.mail.ir2.yahoo.com; Tue, 11 Apr 2017 17:17:35 +0000;
+ 1491931055.891
+Date: Tue, 11 Apr 2017 17:17:35 +0000
+From: Ingo E. <e_58@yahoo.de>
+Reply-To: Ingo E. <e_58@yahoo.de>
+To: "support@example.org" <support@example.org>
+Message-ID: <807903446.1223875.1491931055593@mail.yahoo.com>
+In-Reply-To: <58ed076c2ffbb_129e3fd09901110821866@mccoy.example.org.mail>
+References: <58ecd11c62a77_12a03fd099011108148a2@mccoy.example.org.mail>
+ <58ed076c2ffbb_129e3fd09901110821866@mccoy.example.org.mail>
+Subject: =?UTF-8?Q?Re:_Antwort:_Meine_Aktivit=C3=A4tszahlen_stimmen_nicht.?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="----=_Part_1223874_628120766.1491931055588"
+Content-Transfer-Encoding: 7bit
+X-Original-To: support@example.org
+Delivered-To: support@example.org
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.de; s=s2048;
+ t=1491931056; bh=hkA1Wd3V7Gl8IcCTagmqSKNoCZHunqkZQv197HXsswE=;
+ h=Date:From:Reply-To:To:In-Reply-To:References:Subject:From:Subject;
+ b=DxX/ZvIoBpOUmy8HftiL0FQrvDINM+664xo+oHATVSnKOPApJqkna5jvTliQCV8tFsfb8OWb/r7nY+7eEVo11n/gdUq556wo3cHP195raKJakyJybV3niCo+MkrG4XP4UGEiO3G/WYbX12kvqDluDWfXy20i/VyUD2CHgKwPI5HB/ioYKG5unJ0Hoj9mAfuPMHgJWxzAp0ndd4oy23ngVqE/+Lz7u0PCogDHlGntpJ/nDJ6ofAaYQlyFHP3IiortwpZoPQ8+WfrIqeVPoeqHCb3aHoQBglsQmYavCxuJJz/vpEJmYwxuth5cSPOwfTAx2Xs81pz073frhFj8niBLTg==
+X-Yahoo-Newman-Property: ymail-3
+X-Yahoo-Newman-Id: 438150.68009.bm@omp1012.mail.ir2.yahoo.com
+X-YMail-OSG: QWXUZX8VM1luFMy0WxYNxvJILE2gMWJIo5U6OIHyCP_UNqFZ1Eg8FVxnT9HYvb0
+ ZU1LqW_g41W.z_cZGuN6GrO685TMsUWL9v4u2E9L4NN9oISDYj3ZQ3_hmOkqhidipFpfbx_sURoK
+ xierwNfcA.CVRXSkDngnKh0nsgBfOaHnrU8rDCDxAHCmFImWCLqJj.izlmwLd2qzNXTvLfUfF7MO
+ w4tWc4HGuJmvwapdzpnw71NJ2w1amvC0WobEz4oDPpiA2QD8dmuY7EABwvJMwzRX5ETk5eN8QFmk
+ 7XUNb20jy_D.POwNtpQJDsB5howoFbYWLmhNzd22DdG8wTD4EpkCyUKCDWBHsqQKAgDlM65T3dij
+ r5bZmhKnNUGar06c_TkvLPOjV5.zXKfU4T_Qb9NFc4JYt8p6rrQrIZyvCnTa3Pmv9euqxaBnn7dY
+ T3v6hN7Brs_xPke5PBMfnnbfiqsNBgyVftYGFruvVf3fK0vYj66dC4MaxbTHB1oFehs9uary2.VR
+ QjeyV0n88nJfEu3ziQ2OKaR4f
+X-Mailer: WebService/1.1.9374 YahooMailNeo Mozilla/5.0 (Windows NT 10.0;
+ Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79
+ Safari/537.36 Edge/14.14393
+X-UI-Out-Filterresults: notjunk:1;V01:K0:Q6FFwJTS8bw=:JFAkNolDB3GSDPg9dV4IRN
+ 8nkwtz/Mo76fnLWt/qLNJ+9ZjuBEcfu2jmBPOYYGs+tUhwij2tW+kn9oU1XdLcCxFv5VViqu3
+ f2ERQXcqNICAHobRYPSDWgG+UTjMpUE17lfxG59VRB8EFj+90Dkex7EaSVVDtL/ucpSb/p+9t
+ YOPu/+9r2HQsG/ntV5DQwJQMWcvhkNQ83ijQFLNa80eeD1JiU6mydkh0FyKZdYgb6UNkZAr5S
+ heRGzzeDg3GIApJAs/w4Ntkre53Vo5CJtkT7W1Tg4wj34RH/Umeq39c9OhmZrTNeQRKBRrrHk
+ I3QRD8TYGrY+8JkxvKCTgDYFiEv340Z60OsJPs2FsWVCVRJOpMPEyZfPsgy5d6CXTs4b8N
+
+
+------=_Part_1223874_628120766.1491931055588
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Guten Abend,
+Danke erst einmal f=C3=BCr die schnelle Hilfe.Hier ein paar Details zu me=
+inen Versuchen die Aktivit=C3=A4tszahl=C2=A0zu =C3=A4ndern:
+1. Mein Profil, exampleitischer Lebenslauf, Bearbeiten =E2=80=93 Datum ge=
+=C3=A4ndert=C2=A0=C2=A0=C2=A0 Diese =C3=84nderung hat aber nichts bewirkt=
+.
+2. CaCl, Philschaft, Amtstr=C3=A4ger=C2=A0=C2=A0=C2=A0 - direkt hint=
+er Phil-Schriftwart, bearbeiten =E2=80=93 ge=C3=A4ndert, aber kein B=
+est=C3=A4tigungsfeld(Haken)=C2=A0=C2=A0=C2=A0 - Alle Amtstr=C3=A4ger (gan=
+z oben), bearbeiten =E2=80=93 nach =C3=84nderungHaken gew=C3=A4hlt, aber =
+keine =C3=84nderung
+Vielleicht kannst du es damit nachvollziehen.
+Viele Gr=C3=BC=C3=9FeIngo E. Z! Cacl80 R82
+
+
+
+
+      Von: "support@example.org" <support@example.org>
+ An: ingo.e@example.org =
+
+ Gesendet: 18:42 Dienstag, 11.April 2017
+ Betreff: Antwort: Meine Aktivit=C3=A4tszahlen stimmen nicht.
+   =
+
+#yiv8589419129 .yiv8589419129reply_body {background-color:white;border:1p=
+x solid #DBDBDB;border-radius:3px;display:block;margin:6px 0;padding:10px=
+ 12px 0 12px;margin-right:40px;}#yiv8589419129 img.yiv8589419129avatar {b=
+order-radius:3px;}#yiv8589419129 .yiv8589419129show_full_message {text-al=
+ign:right;font-size:80%;margin-right:40px;}   Guten Abend! Antwort: Meine=
+ Aktivit=C3=A4tszahlen stimmen nicht.     =
+
+   -        S F E06 <support@example.org>, Dienstag, =
+11. April 2017, 16:42 Uhr    Guten Abend,   =
+
+   =
+
+die verdrehten Aktivit=C3=A4tszahlen k=C3=B6nnten eine Nachwehe unserer W=
+artungsarbeiten vom letzten Wochenende gewesen sein. Ich habe Deine Daten=
+ neu durchrechnen lassen und die Aktivit=C3=A4tszahl stimmt nun wieder.  =
+ =
+
+   =
+
+Als Schriftwart hast Du nicht automatisch umfassende Berechtigungen, was =
+die Mitgliederverwaltung angeht. Allerdings bist Du ja zus=C3=A4tzlich au=
+ch Administrator, was Dir in jedem Fall alle n=C3=B6tigen Rechte geben so=
+llte. Au=C3=9Ferdem hat jedes Einzelmitglied das Recht, seine eigene Akti=
+vit=C3=A4tszahl anzupassen.   =
+
+   =
+
+Wie hast Du denn probiert, Deine Aktivit=C3=A4tszahl zu =C3=A4ndern? Norm=
+alerweise macht man das =C3=BCber die exampleitische Vita, indem man dort=
+ die Datumsangaben =C3=A4ndert.   =
+
+   =
+
+Dass Du Dir das Schriftwarts-Amt entzogen hast, riecht nach einem Bug. Ka=
+nnst Du mir Deine genauen Schritte schildern, sodass ich das in einer Tes=
+t-Umgebung nachstellen und das Problem beheben kann?   =
+
+   =
+
+Viele Gr=C3=BC=C3=9Fe!   =
+
+S F Z! E06      =
+
+   =
+
+   -        S F E06 <support@example.org>, Dienstag, =
+11. April 2017, 12:50 Uhr    Dein Anliegen wird jetzt von S  E06 bearbeitet.       =
+
+   -        ingo.e@example.org, Dienstag, 11. April 2017, 11:11 =
+Uhr    Lieber ConPhil Back,      =
+
+      - ich bitte um Hilfe bei folgendem Problem ...Meine Aktivit=C3=A4ts=
+zahlen stimmen nicht.IST: R82 CaCl89 (siehe unten)SOLL: CaCl80 R82Beim Ve=
+rsuch dieses zu =C3=A4ndern (bin Schriftwart CaCl und sollte das auch d=C3=
+=BCrfen!) wurde ich aber auch als Amtstr=C3=A4ger gel=C3=B6scht.Kannst du=
+ das kottigieren, bzw. mir verraten, warum ich das nicht erledigen kann?
+Mit exampleitischen Gr=C3=BC=C3=9Fen   =
+
+Ingo E. R82 CaCl89Profile info      =
+
+      - Ingo E. R82 CaCl89
+      - Mobile:05121 - 26 27 48
+Object info      =
+
+      - Philschaft
+Meta data      =
+
+      - sent_over: Help-Button
+      - browser: {"name"=3D>"Chrome", "group"=3D>"Chrome", "fullVersion"=3D=
+>"51.0.2704.79", "majorVersion"=3D>"51", "minorVersion"=3D>"0"}
+      - os: {"name"=3D>"Windows 10", "group"=3D>"Windows", "fullVersion"=3D=
+>"10.0", "majorVersion"=3D>"10", "minorVersion"=3D>"0"}
+      - viewport: {"width"=3D>"1248", "height"=3D>"567", "orientation"=3D=
+>"landscape"}
+      - locale: de
+      - location: https://example.org/groups/1109-Philscha=
+ft/officers
+      - displayed_navable_object: #<Philschaft id: 1109, name: "Phil=
+isterschaft", created_at: "2014-02-16 00:17:44", updated_at: "2016-12-20 =
+00:40:24", token: "PhV CaCl", extensive_name: "Verein Clausthaler example=
+iten", internal_token: "VCIW", body: nil, type: "Philschaft", mailin=
+g_list_sender_filter: "officers">
+      - role: admin
+   Vollst=C3=A4ndige Nachricht anzeigen    =
+
+  Hilfezentrum der example
+Alle meine Tickets im Hilfezentrum einsehen: https://support.examplesplat=
+tform.org =
+
+
+   =
+
+------=_Part_1223874_628120766.1491931055588
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><div style=3D"color:#000; background-color:#fff;=
+ font-family:Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;=
+font-size:16px"><div id=3D"yui_3_16_0_ym19_1_1491930459033_2960"><font id=
+=3D"yui_3_16_0_ym19_1_1491930459033_3587" face=3D"times new roman, new yo=
+rk, times, serif">Guten Abend,</font></div><div id=3D"yui_3_16_0_ym19_1_1=
+491930459033_2961"><br></div><div id=3D"yui_3_16_0_ym19_1_1491930459033_2=
+962"><font id=3D"yui_3_16_0_ym19_1_1491930459033_3585" face=3D"times new =
+roman, new york, times, serif">Danke erst einmal f=C3=BCr die schnelle Hi=
+lfe.</font></div><div id=3D"yui_3_16_0_ym19_1_1491930459033_2983"><font i=
+d=3D"yui_3_16_0_ym19_1_1491930459033_3583" face=3D"times new roman, new y=
+ork, times, serif">Hier ein paar Details zu meinen Versuchen die Aktivit=C3=
+=A4tszahl&nbsp;zu =C3=A4ndern:</font></div><div id=3D"yui_3_16_0_ym19_1_1=
+491930459033_3043">
+
+<br></div><div id=3D"yui_3_16_0_ym19_1_1491930459033_3093" style=3D"margi=
+n: 0px 0px 13px;"><font id=3D"yui_3_16_0_ym19_1_1491930459033_3094" face=3D=
+"Calibri">1. Mein Profil, exampleitischer Lebenslauf, Bearbeiten =E2=80=93=
+ Datum ge=C3=A4ndert</font></div><div id=3D"yui_3_16_0_ym19_1_14919304590=
+33_3681" style=3D"margin: 0px 0px 13px;"><font face=3D"Calibri">&nbsp;&nb=
+sp;&nbsp; </font><font id=3D"yui_3_16_0_ym19_1_1491930459033_3097" face=3D=
+"Calibri">Diese =C3=84nderung hat aber nichts bewirkt.</font></div><div i=
+d=3D"yui_3_16_0_ym19_1_1491930459033_3234" style=3D"margin: 0px 0px 13px;=
+"><font face=3D"Calibri"><br></font></div><div id=3D"yui_3_16_0_ym19_1_14=
+91930459033_3102" style=3D"margin: 0px 0px 13px;"><font id=3D"yui_3_16_0_=
+ym19_1_1491930459033_3103" face=3D"Calibri">2. CaCl, Philschaft, Amt=
+str=C3=A4ger</font></div><div id=3D"yui_3_16_0_ym19_1_1491930459033_3105"=
+ style=3D"margin: 0px 0px 13px;" dir=3D"ltr"><font id=3D"yui_3_16_0_ym19_=
+1_1491930459033_3106" face=3D"Calibri">&nbsp;&nbsp;&nbsp; - direkt hinter=
+ Phil-Schriftwart, bearbeiten =E2=80=93 ge=C3=A4ndert, aber kein Bes=
+t=C3=A4tigungsfeld
+(Haken)</font></div><div id=3D"yui_3_16_0_ym19_1_1491930459033_3108" styl=
+e=3D"margin: 0px 0px 13px;"><font id=3D"yui_3_16_0_ym19_1_1491930459033_3=
+109" face=3D"Calibri">&nbsp;&nbsp;&nbsp; - Alle Amtstr=C3=A4ger (ganz obe=
+n), bearbeiten =E2=80=93 nach =C3=84nderung
+Haken gew=C3=A4hlt, aber keine =C3=84nderung</font></div><div id=3D"yui_3=
+_16_0_ym19_1_1491930459033_3698" style=3D"margin: 0px 0px 13px;"><font fa=
+ce=3D"Calibri"><br></font></div><div id=3D"yui_3_16_0_ym19_1_149193045903=
+3_3191" style=3D"margin: 0px 0px 13px;" dir=3D"ltr"><font id=3D"yui_3_16_=
+0_ym19_1_1491930459033_3251" face=3D"Calibri">Vielleicht kannst du es dam=
+it nachvollziehen.</font></div><div id=3D"yui_3_16_0_ym19_1_1491930459033=
+_3270" style=3D"margin: 0px 0px 13px;" dir=3D"ltr"><font face=3D"Calibri"=
+><br></font></div><div id=3D"yui_3_16_0_ym19_1_1491930459033_3296" style=3D=
+"margin: 0px 0px 13px;" dir=3D"ltr"><font id=3D"yui_3_16_0_ym19_1_1491930=
+459033_3368" face=3D"Calibri">Viele Gr=C3=BC=C3=9Fe</font></div><div id=3D=
+"yui_3_16_0_ym19_1_1491930459033_3295" style=3D"margin: 0px 0px 13px;" di=
+r=3D"ltr"><font id=3D"yui_3_16_0_ym19_1_1491930459033_3294" face=3D"Calib=
+ri">Ingo E. Z! Cacl80 R82</font></div><div id=3D"yui_3_16_0_ym19_=
+1_1491930459033_3271" style=3D"margin: 0px 0px 13px;" dir=3D"ltr"><font f=
+ace=3D"Calibri"><br></font></div><div id=3D"yui_3_16_0_ym19_1_14919304590=
+33_3110" dir=3D"ltr">
+
+<br></div><div id=3D"yui_3_16_0_ym19_1_1491930459033_3044"><br></div><div=
+ class=3D"qtdSeparateBR" id=3D"yui_3_16_0_ym19_1_1491930459033_2871"><br>=
+<br></div><div class=3D"yahoo_quoted" id=3D"yui_3_16_0_ym19_1_14919304590=
+33_2968" style=3D"display: block;">  <div id=3D"yui_3_16_0_ym19_1_1491930=
+459033_2967" style=3D"font-family: Helvetica Neue, Helvetica, Arial, Luci=
+da Grande, sans-serif; font-size: 16px;"> <div id=3D"yui_3_16_0_ym19_1_14=
+91930459033_2966" style=3D"font-family: HelveticaNeue, Helvetica Neue, He=
+lvetica, Arial, Lucida Grande, sans-serif; font-size: 16px;"> <div id=3D"=
+yui_3_16_0_ym19_1_1491930459033_2965" dir=3D"ltr"> <font id=3D"yui_3_16_0=
+_ym19_1_1491930459033_2964" face=3D"Arial" size=3D"2"> <hr size=3D"1" id=3D=
+"yui_3_16_0_ym19_1_1491930459033_2984"> <b id=3D"yui_3_16_0_ym19_1_149193=
+0459033_3357"><span id=3D"yui_3_16_0_ym19_1_1491930459033_3356" style=3D"=
+font-weight:bold;">Von:</span></b> "support@example.org" &lt;support@wing=
+olf.org&gt;<br> <b id=3D"yui_3_16_0_ym19_1_1491930459033_3359"><span id=3D=
+"yui_3_16_0_ym19_1_1491930459033_3358" style=3D"font-weight: bold;">An:</=
+span></b> ingo.e@example.org <br> <b id=3D"yui_3_16_0_ym19_1_149=
+1930459033_3361"><span id=3D"yui_3_16_0_ym19_1_1491930459033_3360" style=3D=
+"font-weight: bold;">Gesendet:</span></b> 18:42 Dienstag, 11.April 2017<b=
+r> <b id=3D"yui_3_16_0_ym19_1_1491930459033_3363"><span id=3D"yui_3_16_0_=
+ym19_1_1491930459033_3362" style=3D"font-weight: bold;">Betreff:</span></=
+b> Antwort: Meine Aktivit=C3=A4tszahlen stimmen nicht.<br> </font> </div>=
+ <div class=3D"y_msg_container" id=3D"yui_3_16_0_ym19_1_1491930459033_296=
+9"><br><div id=3D"yiv8589419129"><style>
+#yiv8589419129 .yiv8589419129reply_body {background-color:white;border:1p=
+x solid #DBDBDB;border-radius:3px;display:block;margin:6px 0;padding:10px=
+ 12px 0 12px;margin-right:40px;}
+#yiv8589419129 img.yiv8589419129avatar {border-radius:3px;}
+#yiv8589419129 .yiv8589419129show_full_message {text-align:right;font-siz=
+e:80%;margin-right:40px;}
+</style><div id=3D"yui_3_16_0_ym19_1_1491930459033_3194"><div id=3D"yui_3=
+_16_0_ym19_1_1491930459033_3193" style=3D"font-family:Helvetica;backgroun=
+d-color:#F0F0F0;">
+  <div class=3D"yiv8589419129header" id=3D"yui_3_16_0_ym19_1_149193045903=
+3_3192" style=3D"background-color:#337ab7;color:#ffffff;margin-top:0;marg=
+in-left:0;margin-right:0;margin-bottom:20px;padding:20px;">
+    <img align=3D"right" alt=3D"Logo" src=3D"https://example.or=
+g/assets/logo.png" data-id=3D"489787b7-eff1-72b2-39a0-a0787104fd18">
+    <div id=3D"yui_3_16_0_ym19_1_1491930459033_3195">Guten Abend!</div>
+    <div id=3D"yui_3_16_0_ym19_1_1491930459033_3196">Antwort: Meine Aktiv=
+it=C3=A4tszahlen stimmen nicht.</div>
+  </div>
+  <ul id=3D"yui_3_16_0_ym19_1_1491930459033_3200"><li id=3D"yui_3_16_0_ym=
+19_1_1491930459033_3199" style=3D"list-style:none;margin-bottom:20px;marg=
+in-top:20px;">
+        <div class=3D"yiv8589419129reply" id=3D"yui_3_16_0_ym19_1_1491930=
+459033_3198">
+          <div style=3D"float:left;margin-right:10px;">
+            <img width=3D"32" height=3D"32" class=3D"yiv8589419129avatar =
+yiv8589419129left yiv8589419129mrm" alt=3D"Avatars?email=3DF@=
+example" src=3D"https://example.org/avatars?email=3Dfiedlschust=
+er@example.org&amp;size=3D32" data-id=3D"194ba25d-da0d-56f1-bb79-007efbb6=
+d0f6">
+          </div>
+          <div id=3D"yui_3_16_0_ym19_1_1491930459033_3197" style=3D"overf=
+low:hidden;">
+            <small id=3D"yui_3_16_0_ym19_1_1491930459033_3201">
+                S F E06 &lt;support@example.org&gt;,
+              Dienstag, 11. April 2017, 16:42 Uhr
+            </small>
+            <div class=3D"yiv8589419129reply_body" id=3D"yui_3_16_0_ym19_=
+1_1491930459033_3204">
+              <div>
+                </div><div id=3D"yui_3_16_0_ym19_1_1491930459033_3203">Gu=
+ten Abend,<br clear=3D"none"><br clear=3D"none">die verdrehten Aktivit=C3=
+=A4tszahlen k=C3=B6nnten eine Nachwehe unserer Wartungsarbeiten vom letzt=
+en Wochenende gewesen sein. Ich habe Deine Daten neu durchrechnen lassen =
+und die Aktivit=C3=A4tszahl stimmt nun wieder.<br clear=3D"none"><br clea=
+r=3D"none">Als Schriftwart hast Du nicht automatisch umfassende Berechtig=
+ungen, was die Mitgliederverwaltung angeht. Allerdings bist Du ja zus=C3=A4=
+tzlich auch Administrator, was Dir in jedem Fall alle n=C3=B6tigen Rechte=
+ geben sollte. Au=C3=9Ferdem hat jedes Einzelmitglied das Recht, seine <e=
+m id=3D"yui_3_16_0_ym19_1_1491930459033_3298">eigene </em>Aktivit=C3=A4ts=
+zahl anzupassen.<br clear=3D"none"><br clear=3D"none">Wie hast Du denn pr=
+obiert, Deine Aktivit=C3=A4tszahl zu =C3=A4ndern? Normalerweise macht man=
+ das =C3=BCber die exampleitische Vita, indem man dort die Datumsangaben =
+=C3=A4ndert.<br clear=3D"none"><br clear=3D"none">Dass Du Dir das Schrift=
+warts-Amt entzogen hast, riecht nach einem Bug. Kannst Du mir Deine genau=
+en Schritte schildern, sodass ich das in einer Test-Umgebung nachstellen =
+und das Problem beheben kann?<br clear=3D"none"><br clear=3D"none">Viele =
+Gr=C3=BC=C3=9Fe!<br clear=3D"none">S F Z! E06</div>
+              =
+
+            </div><div class=3D"yiv8589419129yqt2767100147" id=3D"yiv8589=
+419129yqtfd76514">
+            <div class=3D"yiv8589419129show_full_message">
+              =
+
+            </div>
+          </div></div><div class=3D"yiv8589419129yqt2767100147" id=3D"yiv=
+8589419129yqtfd56540">
+        </div></div><div class=3D"yiv8589419129yqt2767100147" id=3D"yiv85=
+89419129yqtfd18969">
+      </div></li><div class=3D"yiv8589419129yqt2767100147" id=3D"yiv85894=
+19129yqtfd11072"><li id=3D"yui_3_16_0_ym19_1_1491930459033_3301" style=3D=
+"list-style:none;margin-bottom:20px;margin-top:20px;">
+        <div class=3D"yiv8589419129reply" id=3D"yui_3_16_0_ym19_1_1491930=
+459033_3300">
+          <div style=3D"float:left;margin-right:10px;">
+            <img width=3D"32" height=3D"32" class=3D"yiv8589419129avatar =
+yiv8589419129left yiv8589419129mrm" alt=3D"Avatars?email=3DF@=
+example" src=3D"https://example.org/avatars?email=3Dfiedlschust=
+er@example.org&amp;size=3D32" data-id=3D"5907c3ed-e25d-a151-1eca-ce02c574=
+d4a6">
+          </div>
+          <div id=3D"yui_3_16_0_ym19_1_1491930459033_3299" style=3D"overf=
+low:hidden;">
+            <small id=3D"yui_3_16_0_ym19_1_1491930459033_3353">
+                S F E06 &lt;support@example.org&gt;,
+              Dienstag, 11. April 2017, 12:50 Uhr
+            </small>
+            <div class=3D"yiv8589419129reply_body" id=3D"yui_3_16_0_ym19_=
+1_1491930459033_3303">
+              <div id=3D"yui_3_16_0_ym19_1_1491930459033_3302">
+                Dein Anliegen wird jetzt von S F E06 =
+bearbeitet.
+              </div>
+            </div>
+            <div class=3D"yiv8589419129show_full_message">
+              =
+
+            </div>
+          </div>
+        </div>
+      </li><li id=3D"yui_3_16_0_ym19_1_1491930459033_3306" style=3D"list-=
+style:none;margin-bottom:20px;margin-top:20px;">
+      <div class=3D"yiv8589419129reply" id=3D"yui_3_16_0_ym19_1_149193045=
+9033_3305">
+        <div style=3D"float:left;margin-right:10px;">
+          <img width=3D"32" height=3D"32" class=3D"yiv8589419129avatar yi=
+v8589419129left yiv8589419129mrm" alt=3D"Avatars?email=3Dingo.e@=
+example" src=3D"https://example.org/avatars?email=3Dingo.engelh=
+ardt@example.org&amp;size=3D32" data-id=3D"208d7049-63a1-c2e0-7225-f96dec=
+8682d2">
+        </div>
+        <div id=3D"yui_3_16_0_ym19_1_1491930459033_3304" style=3D"overflo=
+w:hidden;">
+          <small id=3D"yui_3_16_0_ym19_1_1491930459033_3307">
+            ingo.e@example.org,
+            Dienstag, 11. April 2017, 11:11 Uhr
+          </small>
+          <div class=3D"yiv8589419129reply_body" id=3D"yui_3_16_0_ym19_1_=
+1491930459033_3308">
+            <div>
+              </div><div id=3D"yui_3_16_0_ym19_1_1491930459033_3310" styl=
+e=3D"font-family:Helvetica;">
+<div></div>
+<div id=3D"yui_3_16_0_ym19_1_1491930459033_3309">Lieber ConPhil Back=
+,</div>
+
+<ul id=3D"yui_3_16_0_ym19_1_1491930459033_3352"><li id=3D"yui_3_16_0_ym19=
+_1_1491930459033_3351">ich bitte um Hilfe bei folgendem Problem ...
+Meine Aktivit=C3=A4tszahlen stimmen nicht.
+IST: R82 CaCl89 (siehe unten)
+SOLL: CaCl80 R82
+Beim Versuch dieses zu =C3=A4ndern (bin Schriftwart CaCl und sollte das a=
+uch d=C3=BCrfen!) wurde ich aber auch als Amtstr=C3=A4ger gel=C3=B6scht.
+Kannst du das kottigieren, bzw. mir verraten, warum ich das nicht erledig=
+en kann?</li></ul>
+
+<div id=3D"yui_3_16_0_ym19_1_1491930459033_3318">Mit exampleitischen Gr=C3=
+=BC=C3=9Fen<br clear=3D"none">
+Ingo E. R82 CaCl89</div>
+
+
+Profile info
+<ul id=3D"yui_3_16_0_ym19_1_1491930459033_3315"><li id=3D"yui_3_16_0_ym19=
+_1_1491930459033_3317"><a id=3D"yui_3_16_0_ym19_1_1491930459033_3316" hre=
+f=3D"https://example.org/users/1141-ingo-e-r82-cacl89"=
+ target=3D"_blank" rel=3D"nofollow" shape=3D"rect">Ingo E. R82 Ca=
+Cl89</a></li><li id=3D"yui_3_16_0_ym19_1_1491930459033_3314">
+Mobile:
+05121 -  26 27 48
+</li></ul>
+Object info
+<ul><li><a href=3D"https://example.org/Philschaften/1109-p=
+hilisterschaft?preview_as=3Dadmin" target=3D"_blank" rel=3D"nofollow" sha=
+pe=3D"rect">Philschaft</a></li></ul>
+Meta data
+<ul id=3D"yui_3_16_0_ym19_1_1491930459033_3340"><li id=3D"yui_3_16_0_ym19=
+_1_1491930459033_3350">sent_over: Help-Button</li><li>browser: {"name"=3D=
+&gt;"Chrome", "group"=3D&gt;"Chrome", "fullVersion"=3D&gt;"51.0.2704.79",=
+ "majorVersion"=3D&gt;"51", "minorVersion"=3D&gt;"0"}</li><li id=3D"yui_3=
+_16_0_ym19_1_1491930459033_3349">os: {"name"=3D&gt;"Windows 10", "group"=3D=
+&gt;"Windows", "fullVersion"=3D&gt;"10.0", "majorVersion"=3D&gt;"10", "mi=
+norVersion"=3D&gt;"0"}</li><li id=3D"yui_3_16_0_ym19_1_1491930459033_3346=
+">viewport: {"width"=3D&gt;"1248", "height"=3D&gt;"567", "orientation"=3D=
+&gt;"landscape"}</li><li id=3D"yui_3_16_0_ym19_1_1491930459033_3345">loca=
+le: de</li><li id=3D"yui_3_16_0_ym19_1_1491930459033_3344">location: <a i=
+d=3D"yui_3_16_0_ym19_1_1491930459033_3343" href=3D"https://examplesplattf=
+orm.org/groups/1109-Philschaft/officers" target=3D"_blank" rel=3D"no=
+follow" shape=3D"rect">https://example.org/groups/1109-philiste=
+rschaft/officers</a></li><li id=3D"yui_3_16_0_ym19_1_1491930459033_3339">=
+displayed_navable_object: #&lt;Philschaft id: 1109, name: "Phil=
+schaft", created_at: "2014-02-16 00:17:44", updated_at: "2016-12-20 00:40=
+:24", token: "PhV CaCl", extensive_name: "Verein Clausthaler exampleiten"=
+, internal_token: "VCIW", body: nil, type: "Philschaft", mailing_lis=
+t_sender_filter: "officers"&gt;</li><li id=3D"yui_3_16_0_ym19_1_149193045=
+9033_3342">role: admin</li></ul>
+</div>
+
+            =
+
+          </div>
+          <div class=3D"yiv8589419129show_full_message">
+            <a href=3D"http://support.example.org/tickets/6968.=
+eml" target=3D"_blank" rel=3D"nofollow" shape=3D"rect">Vollst=C3=A4ndige =
+Nachricht anzeigen</a>
+          </div>
+        </div>
+      </div>
+    </li></div></ul><div class=3D"yiv8589419129yqt2767100147" id=3D"yiv85=
+89419129yqtfd52913">
+  <div class=3D"yiv8589419129footer" style=3D"background-color:white;padd=
+ing-top:10px;">
+    <small>Hilfezentrum der <a href=3D"https://example.org/" ta=
+rget=3D"_blank" rel=3D"nofollow" shape=3D"rect">example</a><br =
+clear=3D"none">
+Alle meine Tickets im Hilfezentrum einsehen: <a href=3D"https://support.w=
+ingolfsplattform.org/" target=3D"_blank" rel=3D"nofollow" shape=3D"rect">=
+https://support.example.org</a></small>
+  </div>
+</div></div></div></div><br><br></div> </div> </div>  </div></div></body>=
+</html>=
+
+------=_Part_1223874_628120766.1491931055588--

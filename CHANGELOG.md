@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## master (unreleased)
 ### Security
 ### Added
+- Adding German edge cases where "Von, Gesendet, An" appears in a different order.
 ### Deprecated
 ### Removed
 ### Fixed
