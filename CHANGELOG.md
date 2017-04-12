@@ -6,10 +6,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## master (unreleased)
 ### Security
 ### Added
-- Adding German edge cases where "Von, Gesendet, An" appears in a different order.
 ### Deprecated
 ### Removed
 ### Fixed
+
+## ExtendedEmailReplyParser 0.5.1 (2017-04-12)
+### Added
+- Adding German edge cases where "Von, Gesendet, An" appears in a different order.
 
 ## ExtendedEmailReplyParser 0.5.0 (2016-11-15)
 ### Added
